@@ -1,0 +1,124 @@
+/* CSS Variables for easy customization */
+:root {
+    --background-color: #292d33;
+    --text-color: #333;
+    --heading-color: #1a73e8;
+    --button-bg-color: #1a73e8;
+    --button-hover-bg-color: #1669c1;
+    --button-text-color: #fff;
+    --input-bg-color: #ffffff;
+    --input-border-color: #ccc;
+    --input-focus-border-color: #1a73e8;
+    --border-radius: 5px;
+    --padding: 10px;
+    --spacing: 8px;
+    --font-family: Arial, sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: var(--padding);
+    width: 250px;
+}
+
+h1, h2 {
+    color: var(--heading-color);
+    margin-bottom: var(--spacing);
+}
+
+button, input[type="text"], input[type="url"] {
+    font-family: var(--font-family);
+}
+
+/* Button Styles */
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: var(--spacing);
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Input Field Styles */
+input[type="text"], input[type="url"] {
+    width: 100%;
+    padding: 5px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing);
+}
+
+input[type="text"]:focus, input[type="url"]:focus {
+    outline: none;
+    border-color: var(--input-focus-border-color);
+}
+
+/* AI Assistant Section */
+#aiSection {
+    margin-top: var(--spacing);
+}
+
+#aiInput {
+    width: 100%;
+    padding: 5px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing);
+}
+
+#aiSubmitButton {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#aiSubmitButton:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Link List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: var(--spacing) 0;
+}
+
+#linksList button {
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+#linksList button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+#linksList .remove-button {
+    background-color: #d9534f;
+    margin-left: 5px;
+}
+
+#linksList .remove-button:hover {
+    background-color: #c9302c;
